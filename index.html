@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio-player</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/svg/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="body">
+    <main class="main">
+        <div class="wrapper">
+            <audio src="./assets/audio/Don't Hurt Yourself.mp3 " preload="metadata" class="audio"></audio>
+
+            <img src="assets/img/background-image/bg-image1.png" class="background-img">
+
+            <div class="audio-player">
+
+                <img src="assets/img/image-small/image-small1.png" class="img-player" >
+
+                <div class="controls">
+
+                    <div class="buttons">
+
+                        <button class="button play-pause-button">
+                            <img src="/assets/svg/play.png" width="50" height="50" alt="play" class="img-src">
+                        </button>
+
+                        <div class="info">
+                            <div class="song-artist">Beyonce</div>
+                            <div class="song-title">Don't Hurt Yourself</div>
+                        </div>
+
+                        <div class="backward-forward">
+                            <button class="button backward-button">
+                                <img src="/assets/svg/backward.png" width="30" height="30" alt="backward" class="icon">
+                            </button>
+
+                            <button class="button forward-button">
+                                <img src="/assets/svg/forward.png" width="30" height="30" alt="forward" class="icon">
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-container">
+
+                        <input type="range" class="progress" value="0" min="0" max="233.71" step="1">
+
+                    </div>
+
+                    <div class="time">
+                        <div class="current-time">0: 00</div>
+                        <div class="all-time">3: 90</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div> 2022 <a href="https://github.com/nkartell" class="nav-link">My GitHub</a></div>
+
+            <div><a href="https://rs.school/js/" class="rs-school">
+                    <img src="https://rs.school/images/rs_school_js.svg" width="80" height="50" alt="RS School"></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
